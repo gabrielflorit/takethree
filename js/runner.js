@@ -1,4 +1,4 @@
-define(function (require) {
+define(function (require, exports) {
 
 	var display = require('display');
 	var editor  = require('editor');
@@ -10,8 +10,7 @@ define(function (require) {
 
 	}
 
-	return {
-		run: run
-	}
+	// public API
+	exports.run = run;
 
 });

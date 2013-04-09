@@ -1,4 +1,4 @@
-define(function (require) {
+define(function (require, exports) {
 
 	var container = $('#editor');
 	var cm;
@@ -9,9 +9,8 @@ define(function (require) {
 		cm = CodeMirror(container.get(0));
 
 	}
-	
-	return {
-		init: init
-	};
+
+	// public API
+	exports.init = init;
 
 });

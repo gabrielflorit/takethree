@@ -1,4 +1,4 @@
-define(function (require) {
+define(function (require, exports) {
 
 	var container = $('#display');
 	
@@ -8,9 +8,8 @@ define(function (require) {
 		container.append('<iframe src="iframe.html" scrolling="yes"></iframe>');
 
 	}
-	
-	return {
-		init: init
-	};
+
+	// public API
+	exports.init = init;
 
 });
